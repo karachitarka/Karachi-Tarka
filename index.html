@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Karachi Tarka</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Navbar Styles */
+        .nav-bar {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            height: 50px; /* Adjust the height as needed */
+            max-height: 50px; /* Ensure the logo doesn't exceed the navbar height */
+            width: auto; /* Maintain aspect ratio */
+            margin-right: 15px; /* Space between the logo and brand name */
+        }
+
+        .navbar-brand h1 {
+            font-family: 'Playball', cursive;
+            font-size: 2.5rem;
+            color: #fff; /* White text for better contrast */
+            margin: 0; /* Remove default margin */
+        }
+
+        .navbar-toggler {
+            border: none; /* Remove default border */
+            outline: none; /* Remove default outline */
+        }
+
+        .navbar-toggler .fa-bars {
+            font-size: 1.5rem; /* Increase size of the bars icon */
+            color: #fff; /* White color for bars icon */
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            color: #fff; /* Default text color */
+            padding: 0.5rem 1rem;
+            transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+        }
+
+        .navbar-nav .nav-item .nav-link:hover,
+        .navbar-nav .nav-item .nav-link.active {
+            color: #ffeb3b; /* Change text color on hover and active state */
+            transform: scale(1.1); /* Slightly enlarge the link on hover */
+        }
+
+        .navbar-nav .dropdown-menu {
+            border: none; /* Remove default border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to dropdown */
+            background: #feb47b; /* Dropdown background matching gradient */
+        }
+
+        .navbar-nav .dropdown-menu .dropdown-item {
+            color: #fff; /* White text */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+        }
+
+        .navbar-nav .dropdown-menu .dropdown-item:hover {
+            background-color: #ff7e5f; /* Background color on hover */
+            color: #ffeb3b; /* Text color on hover */
+        }
+
+        .btn-search {
+            background-color: #ffeb3b; /* Button background color */
+            border: none; /* Remove default border */
+        }
+
+        .btn-search .fas {
+            color: #ff7e5f; /* Icon color */
+        }
+
+        .btn-search:hover {
+            background-color: #ffc107; /* Background color on hover */
+        }
+
+        .btn-primary {
+            background-color: #ffeb3b; /* Button background color */
+            border: none; /* Remove default border */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+        }
+
+        .btn-primary:hover {
+            background-color: #ffc107; /* Background color on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+
+        section {
+            padding: 60px 0; /* Add padding to sections */
+        }
+
+        #home {
+            background: #f8f9fa;
+        }
+
+        #about {
+            background: #e9ecef;
+        }
+
+        #services {
+            background: #f8f9fa;
+        }
+
+        #events {
+            background: #e9ecef;
+        }
+
+        #menu {
+            background: #f8f9fa;
+        }
+
+        #contact {
+            background: #e9ecef;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4" >
+                <a href="index.html" class="navbar-brand">
+                    <!-- <img src="path/to/logo.png" alt="Karachi Tarka Logo" class="navbar-logo"> -->
+                     <div>
+                        <h1 class="text-primary fw-bold mb-0">Karachi<span class="text-dark">Tarka</span></h1>
+                        <p class="navbar-slogan">Signature Karachi Dishes</p>
+
+                     </div>
+                </a>
+                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#events" class="nav-item nav-link">Events</a>
+                        <a href="#menu" class="nav-item nav-link">Menu</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Sections -->
+   
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <p class="section-content"> Karachi Tarka is a family-operated kitchen that brings the heart of Karachi's 
+                culinary traditions to Springfield, VA, United States, Virginia. This endeavor is the brainchild of Mr. Aurangzeb and Mrs. Khurshida, who, along with their son Asad and daughter-in-law Faryal, have dedicated themselves to preserving and sharing the authentic flavors of their hometown.
+
+                Having migrated from Karachi to Springfield, VA, the family understands
+                 the longing for home-cooked meals that evoke the essence of Karachi's vibrant street food culture. 
+                 They are committed to providing services to families and immigrants who crave the authentic Karachi cuisine 
+                 they remember and love. At Karachi Tarka, you can expect signature recipes cooked the traditional way, offering a genuine 
+                taste of Karachi right here in Springfield, VA, 
+                United States, Virginia.</p>
+            <div class="about-image-wrapper">
+                    <img src="img/tarka_logo.jpg" alt="OUR LOGO" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service">
+            <h3>Event Catering</h3>
+            <p>We provide catering services for a variety of events, including weddings, birthday parties, corporate events, and more. Our delicious and authentic dishes will make your event memorable.</p>
+        </div>
+        <div class="service">
+            <h3>Weekly Meal Plans</h3>
+            <p>Our weekly meal plans are perfect for busy individuals and families. Enjoy healthy, home-cooked meals delivered to your doorstep every day of the week.</p>
+        </div>
+        <div class="service">
+            <h3>Custom Orders</h3>
+            <p>Have a specific dish in mind? We accept custom orders to cater to your unique taste and preferences. Let us know your requirements, and we will make it happen.</p>
+        </div>
+        <div class="service">
+            <h3>Private Chef Services</h3>
+            <p>Experience the luxury of a private chef in the comfort of your home. Our chef will prepare a customized menu and cook a gourmet meal for you and your guests.</p>
+        </div>
+        <div class="service">
+            <h3>Cooking Classes</h3>
+            <p>Join our cooking classes to learn how to make delicious dishes at home. Our expert chefs will guide you through the process, sharing tips and tricks along the way.</p>
+        </div>
+    </section>
+    
+
+
+    <section id="menu">
+        <div class="container">
+            <h2 class="section-title">Menu</h2>
+
+            <!-- Deghi Chicken Biryani -->
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Deghi Chicken Biryani</h3>
+                    <p>Our Signature Deghi Chicken Biryani is marinated in our house grounded fragrant herbs and spice, cooked in a traditional daigh. Aromatic rice cooked to perfection.</p>
+                    <p><strong>Single serving:</strong> $12</p>
+                    <p><strong>Family Pack:</strong> $80</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="img/deghi_biryani.jpg" alt="Deghi Chicken Biryani">
+                </div>
+            </div>
+
+            <!-- Koyla Chicken Karahi -->
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Koyla Chicken Karahi</h3>
+                    <p>Our famous Koyla Chicken Karahi, made from chicken leg and thigh cooked on open char flame.</p>
+                    <p><strong>Single Serving:</strong> $15</p>
+                    <p><strong>Family Tray:</strong> $85</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="img/koyla_karahi.jpg" alt="Koyla Chicken Karahi">
+                </div>
+            </div>
+
+            <!-- Beef Chapli Kabob -->
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Beef Chapli Kabab</h3>
+                    <p>Large 3 Piece Flavor blasting kabob, made with Ground beef, freshly minced herbs and infused with some hand selected flavorful spices.</p>
+                    <p><strong>3 Piece:</strong> $20</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="img/chapli_kabab.jpeg" alt="Beef Chapli Kabob">
+                </div>
+            </div>
+
+            <!-- Gajjar Halwa -->
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Gajjar Halwa</h3>
+                    <p>Dessert made from carrots and khoya and nuts. (Nut free option is available)</p>
+                    <p><strong>1lb. box:</strong> $10</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="img/gajar_halwa.jpg" alt="Gajjar Halwa">
+                </div>
+            </div>
+
+
+            <!-- Panjiri -->
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Panjiri</h3>
+                    <p>Chopped pistachio, almonds, cashews, raisins, semolina, coconut, edible gum, house Desi Ghee. 32 oz Container.</p>
+                    <p><strong>Sugar Free Panjiri:</strong> $30</p>
+                    <p><strong>Gur Panjiri:</strong> $25</p>
+                    <p><strong>Shipping in the US:</strong> $25</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="img/panjiri.jpeg" alt="Panjiri">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/search/?api=1&query=Springfield,+VA,+United+States,+22150" target="_blank">Springfield, VA, United States, 22150</a></p>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+17035937272">+1 703-593-7272</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:sales@karachitarka.com">sales@karachitarka.com</a></p>
+        </div>
+    </section>
+    
+
+    <!-- Bootstrap and necessary scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@
