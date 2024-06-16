@@ -156,34 +156,32 @@
     </style>
 </head>
 <body>
-    <!-- Navbar start -->
     <div class="container-fluid nav-bar">
         <div class="container">
-            <nav class="navbar navbar-light navbar-expand-lg py-4" >
+            <nav class="navbar navbar-light navbar-expand-lg py-4 fixed-top">
                 <a href="index.html" class="navbar-brand">
-                    <!-- <img src="path/to/logo.png" alt="Karachi Tarka Logo" class="navbar-logo"> -->
-                     <div>
-                        <h1 class="text-primary fw-bold mb-0">Karachi<span class="text-dark">Tarka</span></h1>
-                        <p class="navbar-slogan">Signature Karachi Dishes</p>
-
-                     </div>
+                    <h1 class="text-primary fw-bold mb-0">Karachi<span class="text-dark">Tarka</span></h1>
+                    <p class="navbar-slogan">Deliciousness delivered!</p>
                 </a>
-                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto">
-                        <a href="#" class="nav-item nav-link active">Home</a>
+                    <div class="navbar-nav ms-auto">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#services" class="nav-item nav-link">Services</a>
-                        <a href="#events" class="nav-item nav-link">Events</a>
                         <a href="#menu" class="nav-item nav-link">Menu</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
+                    <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </button>
                     <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
                 </div>
             </nav>
         </div>
     </div>
-
     <!-- Sections -->
    
     <section id="about">
